@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<style>
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+    gap: 20px;
+    padding: 30px;
+    width: 55%;
+    margin: auto;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.card h3 {
+    margin: 15px 0 5px;
+    font-size: 20px;
+    color: #333;
+}
+
+.card p {
+    margin: 0 0 10px;
+    font-size: 16px;
+    color: rgb(179, 17, 17);
+}
+
+.card button.add-to-cart {
+    background-color: rgb(179, 17, 17);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 20px;
+    
+}
+
+.card button.add-to-cart:hover {
+  background-color: rgb(143, 4, 4);
+}
+
+</style>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="logo.png" alt="">
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="food.html">Food</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div>
+            <a href="form.html" class="cart-icon">
+                <img src="commerce_11081345.png" alt="Cart">
+                <span id="cart-count">0</span>
+            </a>
+        </div>
+    </nav>
+ 
+  <div class="card-container">
+    <div class="card">
+      <img src="pizza.png" alt="Food">
+      <h3>Pizza</h3>
+      <p>$10</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <img src="burger.png" alt="Food">
+      <h3>Burger</h3>
+      <p>$8</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <img src="chiecken.png" alt="Food">
+      <h3>Chicken</h3>
+      <p>$12</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <img src="greek salad.png" alt="Food">
+      <h3>greek salad</h3>
+      <p>$6</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <img src="hot dog.png" alt="Food">
+      <h3>hot dog</h3>
+      <p>$15</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <img src="ice.png" alt="Food">
+      <h3>Ice Cream</h3>
+      <p>$5</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+  </div>
+
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-about">
+      <h3>Robert Food</h3>
+      <p>We serve fresh, delicious, and fast food to satisfy your cravings. Order now and enjoy the best meals in Aswan.</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="food.html">food</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h4>Contact Us</h4>
+      <p><strong>Address:</strong> Aswan, Egypt</p>
+      <p><strong>Phone:</strong> +20 114 575 4005</p>
+      <p><strong>Email:</strong> RobertFood@gmail.com</p>
+    </div>
+
+    <div class="footer-social">
+      <h4>Follow Us</h4>
+      <div class="social-icons">
+        <a href="https://www.facebook.com" target="_blank"><img src="facebook_11339877.png" alt="Facebook"></a>
+        <a href="https://www.instagram.com" target="_blank"><img src="instagram_4701472.png" alt="Instagram"></a>
+        <a href="https://www.youtube.com" target="_blank"><img src="youtube_4138177.png" alt="YouTube"></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Robert Food. All rights reserved. Made with love 🖤</p>
+  </div>
+</footer>
+    <script src="food.js"></script>
+</body>
+</html>
